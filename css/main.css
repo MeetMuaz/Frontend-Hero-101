@@ -1,0 +1,16 @@
+/* costants */
+:root{
+    --primary-color: #FF6464;
+    --white-color: #FFFFFF;
+    --dark-color: #21243D;
+    --muted-color: #8695A4;
+    --secondary-color: #00A8CC;
+    --secondary-color-thin: #EDF7FA;
+}
+
+/* default styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
