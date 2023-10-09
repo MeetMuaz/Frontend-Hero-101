@@ -2,6 +2,7 @@
 :root{
     --primary-color: #FF6464;
     --white-color: #FFFFFF;
+    --black-color: #000000;
     --dark-color: #21243D;
     --muted-color: #8695A4;
     --secondary-color: #00A8CC;
@@ -13,4 +14,210 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* general style */
+.white-container{
+    padding: 0 5rem;
+    background-color: var(--white-color);
+}
+
+.blue-container{
+    padding: 0 5rem;
+    background-color: var(--secondary-color-thin);
+}
+
+
+.card-container hr{
+    margin-top: 10px;
+    border: 0;
+    border-top: 1px solid #E0E0E0;
+    
+}
+.card-container{
+    margin-top: 20px;
+}
+.card-box{
+    display: flex;
+    justify-content: space-between;
+}
+.card-box div:nth-child(1){
+    height: 180px;
+    width: 246px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    flex-basis: 20%;
+}
+
+
+.card-box div:nth-child(2){
+    flex-basis: 70%;
+}
+.card-box div:nth-child(1) img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-box h4{
+    font-size: 30px;
+    color: var(--dark-color);
+}
+.card-box .about-card{
+    margin-top: 20px;
+}
+.card-box .about-card span:nth-child(1) {
+    background-color: var(--dark-color);
+    border-radius: 20px;
+    padding: 1px 5px;
+    color: var(--white-color);
+    font-size: 18;
+    margin-right: 20px;
+}
+
+.card-box .about-card span:nth-child(2){
+    color: var(--muted-color);
+    font-size: 20px;
+}
+
+.card-box p{
+    color: var(--dark-color);
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+/* navigation-section */
+.navigation-container{
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation-link-container{
+    list-style: none;
+    display: flex;
+}
+
+.navigation-link-container > li {
+    margin-left: 20px;
+}
+
+.navigation-link-container > li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-color);
+}
+
+.navigation-link-container > li a:hover {
+    color: var(--primary-color);
+}
+
+/* header-section */
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-text-cotainer, .header-text-image{
+    padding: 3rem 0 2rem;
+}
+.header-text-cotainer{
+    width: 60%;
+}
+.header-text-image{
+    width: 40%;
+}
+.header-text-cotainer h1{
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+.header-text-cotainer h1 span{
+    color: var(--muted-color);
+}
+.header-text-cotainer p{
+    margin-top: 30px;
+    font-size: 16px;
+    max-width: 498px;
+}
+.header-text-cotainer button{
+    margin-top: 30px;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    outline: none;
+    border: 0;
+}
+.header-text-cotainer button:hover{
+    background-color: var(--dark-color);
+}
+
+.header-text-image div{
+    position: relative;
+    z-index: 0;
+    height: 243px;
+    width: 234px;
+    border-radius: 50%;
+    background-color: #EDF7FA;
+}
+.header-text-image div img{
+    position: absolute;
+    z-index: 1;
+    height: 243px;
+    width: 234px;
+    border-radius: 234px / 2;
+    left: 7px;
+    bottom: 7px;
+}
+
+/* recent-section */
+.recent-container{
+  background-color: var(--secondary-color-thin);
+   padding: 30px 0;
+}
+
+.recent-container .title{
+    display: flex;
+    justify-content: space-between;
+}
+.recent-container .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "grid-2 grid-2";
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+
+.recent-container .box-container div {
+    background-color: var(--white-color);
+    padding: 10px;
+}
+
+.recent-container .box-container div h4{
+    color: var(--dark-color);
+    font-size: 26px;
+}
+.recent-container .box-container p{
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/* featured works */
+.featured-container{
+    padding: 30px 0;
+}
+
+.featured-container p{
+    font-size: 22px;
 }
